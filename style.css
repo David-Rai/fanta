@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.page1{
+    height: 100vh;
+    background: rgb(244,159,7);
+    background: linear-gradient(90deg, rgba(244,159,7,1) 0%, rgba(246,103,0,1) 72%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page1 nav{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0%;
+    padding: 0px 150px;
+}
+.page1 nav i{
+    color: white;
+}
+.page1 .fanta{
+    position: absolute;
+    z-index: 3;
+}
+.ncenter{
+    display: flex;
+}
+.ncenter li{
+    list-style: none;
+    padding: 0px 20px;
+    color: white;
+    font-size: 15px;
+    z-index: 4;
+}
+.logo{
+color: white;
+}
+.ctxt{
+    text-transform: uppercase;
+    font-size: 25vw;
+    color: white;
+    position: absolute;
+}
+.leaf {
+    position: absolute;
+    left: 3%;
+    top: 3%;
+    height: 50vh;
+    z-index: 6;
+}
+.leaf2{
+    position: absolute;
+    right: 3%;
+   bottom: 3%;
+    height: 30vh;
+    z-index: 6;
+}
+.orange{
+    position: absolute;
+    z-index: 6;
+    bottom: 5%;
+    height: 50vh;
+    left: 50%;
+}
+.orange2{
+    position: absolute;
+    z-index: 6;
+    top: 7%;
+    height: 36vh;
+    left: 30%;
+    z-index: 2;
+}
+.page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #f49f07;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.p2right{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.p2left{ 
+    height: 100%;
+    width: 40%;
+}
+.p2right h1{
+    font-size: 40px;
+}
+.p2right P{
+    padding-top: 20px;
+    width: 70%;
+    color: rgb(26, 20, 20);
+}
+
+.page3{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100%;
+   background: rgb(244,159,7);
+    background: linear-gradient(180deg, rgba(244,159,7,1) 7%, rgba(246,103,0,1) 100%);;
+}
+
+.page3 .box{
+    height: 60vh;
+    width: 20vw;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: end;
+}
+.box img{
+        height: 40vh;
+        transform: rotate(-22deg);
+}
+.box h1{
+    padding: 10px 0px;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: rgb(54, 53, 53);
+}
+.box button{
+    background-color: #F49F07;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 80px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+@media (max-width:600px) {
+    .page1{
+        background-color: red;
+    }
+    .page1 nav li{
+        display: none;
+    }
+    .page1 nav{
+        padding: 0px 20px;
+        justify-content: space-between;
+    }    
+    nav i{
+        font-size: 30px;
+    }
+    .orange2{
+        top: 14%;
+        height: 20vh;
+    }
+    .leaf{
+        position: absolute;
+        top: 0%;
+        left: -10%;
+        height: 30vh;
+    }
+    .leaf2{
+        position: absolute;
+        bottom: 10%;
+        left: 0%;
+        height: 20vh;
+    }
+    .logo{
+       font-size: 20px;
+    }
+    .orange{
+        position: absolute;
+        z-index: 6;
+       bottom: 10%;
+        height: 30vh;
+        left: 50%;
+    }
+    .p2left{
+        width: 100%;
+        height: 50%;
+    }
+    .p2right{
+        width: 100%;
+        height: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+    .p2right p{
+        font-size: 10px;
+    }
+    .page3{
+        flex-wrap: wrap;
+    }
+    .page3 .box{
+        height: 40vh;
+        width: 40%;
+    }
+    .box h1{
+        font-size: 20px;
+    }
+    .box img{
+        height: 20vh;
+    }
+}
